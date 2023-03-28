@@ -4,19 +4,26 @@ h1
     text-align:left;
     
 }
+/*this is color of hending1*/
+
 body
 {
 	background-color:orange;
 }
+/*this is color of background*/
+
 p1
 {
     color:rgb(38, 156, 156);
     text-align:left;
     
 }
+/*this is color of p1*/
+
 h3
 {
     color:rgb(204, 0, 255);
     text-align:left;
     
 }
+/*this is color of heading3*/
