@@ -1,22 +1,26 @@
-h1
+hh1
 {
     color:blue;
     text-align:center;
     
 }
+/*this is color of heading1*/
 body
 {
 	background-color:rgb(0, 153, 255);
 }
+/*this is color of background*/
 h3
 {
     color:rgb(200, 255, 0);
    
     
 }
+/*this is color of heading3*/
 h2
 {
     color:rgb(200, 255, 0);
    
     
 }
+/*this is color of heading2*/
