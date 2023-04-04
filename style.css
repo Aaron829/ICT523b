@@ -1,6 +1,6 @@
 h1
 {
-    color:blue;
+    color:rgb(255, 251, 0);
     text-align:left;
     
 }
@@ -8,13 +8,13 @@ h1
 
 body
 {
-	background-color:orange;
+	background-color:rgb(0, 204, 255);
 }
 /*this is color of background*/
 
 p1
 {
-    color:rgb(38, 156, 156);
+    color:rgb(81, 156, 38);
     text-align:left;
     
 }
@@ -22,7 +22,7 @@ p1
 
 h3
 {
-    color:rgb(204, 0, 255);
+    color:rgb(0, 255, 42);
     text-align:left;
     
 }
