@@ -44,6 +44,13 @@ body {
   background-color: #ddd;
   color: black;
 }
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
 /* Style the footer */
 .footer {
   background-color: #f1f1f1;
@@ -60,9 +67,9 @@ body {
     <!--this is header-->
      
       <div class="topnav">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+        <a class="active" href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
       </div>
       
     
