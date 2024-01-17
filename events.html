@@ -100,63 +100,66 @@
    
     <!-- JavaScript validation code -->
     <script>
-        const form = document.getElementById("enquiryForm");
-        const firstName = document.getElementById("firstName");
-        const lastName = document.getElementById("lastName");
-        const gender = document.getElementById("gender");
-        const phone = document.getElementById("phone");
-        const enquiry = document.getElementById("enquiry");
-       
-        // Event listener for form submission
-        form.addEventListener("submit", function(event) {
-          event.preventDefault(); // Prevent form submission
-          validateForm(); // Call validation function
-        });
-       
-        // Validation function for form input fields
-        function validateForm() {
-          if (firstName.value === "") { // Check if first name input is empty
-            alert("Please enter your first name."); // Alert user to enter value
-            return false; // Return false to prevent form submission
-          }
-          if (!/^[a-zA-Z]+$/.test(firstName.value)) { // Check if first name input contains only letters
-            alert("First name should contain only letters."); // Alert user to enter only letters
-            return false; // Return false to prevent form submission
-          }
-          if (lastName.value === "") { // Check if last name input is empty
-            alert("Please enter your last name."); // Alert user to enter value
-            return false; // Return false to prevent form submission
-          }
-          if (!/^[a-zA-Z]+$/.test(lastName.value)) { // Check if last name input contains only letters
-            alert("Last name should contain only letters."); // Alert user to enter only letters
-            return false; // Return false to prevent form submission
-          }
-          if (gender.value === "") { // Check if gender input is empty
-            alert("Please select your gender."); // Alert user to select a value
-            return false; // Return false to prevent form submission
-          }
-          if (gender.value !== "Male" && gender.value !== "Female") { // Check if gender input is not Male or Female
-            alert("Gender should be Male or Female."); // Alert user to select Male or Female
-            return false; // Return false to prevent form submission
-          }
-          if (phone.value === "") { // Check if phone number input is empty
-            alert("Please enter your phone number."); // Alert user to enter value
-            return false; // Return false to prevent form submission
-          }
-          if (!/^\d+$/.test(phone.value)) { // Check if phone number input contains only numbers
-            alert("Phone number should contain only numbers."); // Alert user to enter only numbers
-            return false; // Return false to prevent form submission
-          }
-          if (enquiry.value === "") { // Check if enquiry input is empty
-            alert("Please enter your enquiry."); // Alert user to enter value
-            return false; // Return false to prevent form submission
-          }
-          if (enquiry.value.length > 150) { // Check if enquiry input exceeds 150 characters
-            alert("Enquiry should not exceed 150 words."); // Alert user to limit enquiry to 150 characters
-            return false; // Return false to prevent form submission
-          }
-          return true; // Return true to allow form submission
-        }   </center>
+     // Get form and input elements
+const form = document.getElementById("enquiryForm");
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const gender = document.getElementById("gender");
+const phone = document.getElementById("phone");
+const enquiry = document.getElementById("enquiry");
+
+// Event listener for form submission
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form submission
+  validateForm(); // Call validation function
+});
+
+// Validation function for form input fields
+function validateForm() {
+  if (firstName.value === "") {
+    alert("Please enter your first name.");
+    return false;
+  }
+  if (!/^[a-zA-Z]+$/.test(firstName.value)) {
+    alert("First name should contain only letters.");
+    return false;
+  }
+  if (lastName.value === "") {
+    alert("Please enter your last name.");
+    return false;
+  }
+  if (!/^[a-zA-Z]+$/.test(lastName.value)) {
+    alert("Last name should contain only letters.");
+    return false;
+  }
+  if (gender.value === "") {
+    alert("Please select your gender.");
+    return false;
+  }
+  if (gender.value !== "Male" && gender.value !== "Female") {
+    alert("Gender should be Male or Female.");
+    return false;
+  }
+  if (phone.value === "") {
+    alert("Please enter your phone number.");
+    return false;
+  }
+  if (!/^\d+$/.test(phone.value)) {
+    alert("Phone number should contain only numbers.");
+    return false;
+  }
+  if (enquiry.value === "") {
+    alert("Please enter your enquiry.");
+    return false;
+  }
+  if (enquiry.value.length > 150) {
+    alert("Enquiry should not exceed 150 words.");
+    return false;
+  }
+  // If all validations pass, you can proceed with form submission or any other actions
+  alert("Form submitted successfully!");
+  return true;
+}
     </script>
 
   
